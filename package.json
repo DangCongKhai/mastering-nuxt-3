@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "prisma": {
+    "seed": "node prisma/seed.mjs"
+  },
+  "scripts": {
+    "build": "prisma generate && nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@nuxtjs/supabase": "^1.1.5",
+    "@nuxtjs/tailwindcss": "^6.10.4",
+    "@pinia/nuxt": "^0.5.1",
+    "@prisma/client": "^5.7.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "@vueuse/core": "^10.11.1",
+    "@vueuse/nuxt": "^10.11.1",
+    "nuxt": "^3.9.1",
+    "pinia": "^2.1.7",
+    "prisma": "^5.8.0",
+    "vite-plugin-vsharp": "^1.6.0"
+  },
+  "dependencies": {
+    "stripe": "^11.10.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@prisma/client",
+      "@prisma/engines",
+      "esbuild",
+      "prisma",
+      "sharp",
+      "vue-demi"
+    ]
+  }
+}
